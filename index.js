@@ -134,19 +134,19 @@ export default e => {
 
         vec3 p = position;
         if (characterIndex >= uCharacters) {
-          vec3 center = vec3(
+          /* vec3 center = vec3(
             (aTroikaGlyphBounds.z + aTroikaGlyphBounds.x) * 0.5,
             (aTroikaGlyphBounds.w + aTroikaGlyphBounds.y) * 0.5,
             0.
           );
-          vec2 dims = vec2(aTroikaGlyphBounds.z - aTroikaGlyphBounds.x, aTroikaGlyphBounds.w - aTroikaGlyphBounds.y);
+          vec2 dims = vec2(aTroikaGlyphBounds.z - aTroikaGlyphBounds.x, aTroikaGlyphBounds.w - aTroikaGlyphBounds.y); */
 
-          p -= center;
+          // p -= center;
           p.x += 0.02;
           p.y += 0.02;
           // p *= 1.3;// * vec3(1.2, 1., 1.);
-          p += center;
-          p.z += -0.001;
+          // p += center;
+          p.z += -0.01;
           vColor = vec3(0.);
         } else {
           vColor = vec3(1.);
