@@ -172,7 +172,9 @@ export default e => {
   });
   async function makeTextMesh(
     text = '',
-    font = '/fonts/Bangers-Regular.ttf',
+    font = '/fonts/Plaza Regular.ttf',
+    // font = '/fonts/WinchesterCaps.ttf',
+    // font = '/fonts/Koloss.ttf',
     fontSize = 0.5,
     anchorX = 'left',
     anchorY = 'middle',
